@@ -1,0 +1,37 @@
+html,
+body {
+  user-select: none;
+}
+
+.CodeMirror * {
+  font-size: var(--fontSize);
+  user-select: text;
+}
+
+.console {
+  font-size: var(--fontSize);
+  user-select: text;
+}
+.console-line {
+  user-select: text;
+  /* if theme is light, make color black */
+  color: var(--themeColor);
+  
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
